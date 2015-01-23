@@ -1,0 +1,11 @@
+
+# This is a comment
+type: Other file option
+
+data: 1,2,4,5,6
+data: asd.json
+data: asd.csv
+data: asd.css # not supported
+
+nonKeywordKey: 1, 2, 3 # numbers
+otherKey: T-is is a string argument

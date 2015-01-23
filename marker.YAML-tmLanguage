@@ -28,7 +28,7 @@ patterns:
   name: comment.line.marker
   match: \#.*
 
-- comment: Variables like $PARAM1, $TM_SELECTION...
+- comment: key: string value
   name: entity.name.tag.marker
   match: \S+[:](\s[A-Za-z][\S\s]+)
   captures:

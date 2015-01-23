@@ -7,14 +7,35 @@ uuid: b9dc6dbf-fab9-42ca-882f-6400acaa79cb
 
 patterns:
 - comment: Tab stops like $1, $2...
-  name: keyword.other.marker
+  name: constant.numeric.marker
   match: \d+
+
+- comment: Visualization type keyword
+  name: keyword.other.marker
+  match: ^type[:]
+
+- comment: Value type keyword
+  name: keyword.other.marker
+  match: ^data[:](\s[\S]+\.(json|csv))
+  captures:
+    '1': {name: support.function.marker}
+
+- comment: Value type keyword
+  name: keyword.other.marker
+  match: ^data[:]
 
 - comment: Comments like # hello world
   name: comment.line.marker
   match: \#.*
 
-- comment: Comments like # hello world
+- comment: Variables like $PARAM1, $TM_SELECTION...
   name: entity.name.tag.marker
-  match: ^[a-zA-Z]*[:]
+  match: \S+[:](\s[A-Za-z][\S\s]+)
+  captures:
+    '1': {name: string.unquoted.marker}
+
+- comment: Keys
+  name: entity.name.tag.marker
+  match: ^[a-zA-Z]*[:] 
+
 ...

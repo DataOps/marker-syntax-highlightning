@@ -9,3 +9,4 @@ Create a file with the extension ```.mr``` for testing
 
 You make edits to the marker.YAML-tmLanguage file, then ```F7``` to compile it to marker.tmLanguage. Sublime should reload the syntax to it's files automatically.
 
+Find syntax making grammar [here](http://manual.macromates.com/en/language_grammars)

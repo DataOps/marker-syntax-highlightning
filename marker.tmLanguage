@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>mr</string>
+	</array>
+	<key>name</key>
+	<string>Marker</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Tab stops like $1, $2...</string>
+			<key>match</key>
+			<string>\d+</string>
+			<key>name</key>
+			<string>keyword.other.marker</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comments like</string>
+			<key>match</key>
+			<string>\#.*</string>
+			<key>name</key>
+			<string>comment.line.marker</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comments like</string>
+			<key>match</key>
+			<string>^[a-zA-Z]*[:]</string>
+			<key>name</key>
+			<string>entity.name.tag.marker</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.marker</string>
+	<key>uuid</key>
+	<string>b9dc6dbf-fab9-42ca-882f-6400acaa79cb</string>
+</dict>
+</plist>

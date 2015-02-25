@@ -12,19 +12,19 @@
 	<array>
 		<dict>
 			<key>comment</key>
+			<string>key-value</string>
+			<key>match</key>
+			<string>([A-Za-z0-9]+(\-[A-Za-z0-9]+)+)</string>
+			<key>name</key>
+			<string>string.unquoted.marker</string>
+		</dict>
+		<dict>
+			<key>comment</key>
 			<string>Tab stops like $1, $2...</string>
 			<key>match</key>
 			<string>\d+</string>
 			<key>name</key>
 			<string>constant.numeric.marker</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>Visualization type keyword</string>
-			<key>match</key>
-			<string>^type[:]</string>
-			<key>name</key>
-			<string>keyword.other.marker</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -38,7 +38,7 @@
 			<key>comment</key>
 			<string>Value type keyword</string>
 			<key>match</key>
-			<string>^data[:](\s[\S]+\.(json|csv))</string>
+			<string>([\S]+\.(json|csv))</string>
 			<key>name</key>
 			<string>keyword.other.marker</string>
 		</dict>
@@ -54,7 +54,7 @@
 			<key>comment</key>
 			<string>Comments like</string>
 			<key>match</key>
-			<string>\#.*</string>
+			<string>\#\s.*</string>
 			<key>name</key>
 			<string>comment.line.marker</string>
 		</dict>
@@ -68,7 +68,7 @@
 				</dict>
 			</dict>
 			<key>comment</key>
-			<string>Variables like $PARAM1, $TM_SELECTION...</string>
+			<string>key string value</string>
 			<key>match</key>
 			<string>\S+[:](\s[A-Za-z][\S\s]+)</string>
 			<key>name</key>
@@ -81,6 +81,22 @@
 			<string>^[a-zA-Z]*[:]</string>
 			<key>name</key>
 			<string>entity.name.tag.marker</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keys</string>
+			<key>match</key>
+			<string>\#[^,;]*</string>
+			<key>name</key>
+			<string>entity.name.tag.marker</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Keys</string>
+			<key>match</key>
+			<string>\@[^,;]*</string>
+			<key>name</key>
+			<string>string.unquoted.marker</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

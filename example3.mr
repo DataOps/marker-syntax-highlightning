@@ -1,0 +1,26 @@
+
+1,2,20,4,5,10
+#barchart
+#labels true
+
+#labels
+	on true
+
+
+#asd 2,"asd", "235"
+
+# barrowed from objective c
+# alternative to sidebar with graphmakers api
+#strings
+	upLeft one
+	upRight two
+
+#title My bar chart
+#
+
+# Graph maker may reveal selectors & css properties
+@highest
+	color red
+
+@lowest
+	display none

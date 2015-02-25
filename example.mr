@@ -1,11 +1,16 @@
 
 # This is a comment
-type: simple bar chart
+
 data: 1,2,4,5,6
-data: asd.json # data from supported file format
+asd.json # data from supported file format
 data: asd.csv # data from supported file format
 data: asd.css # not supported
 
 nonKeywordKey: 1, 2, 3 # number argument
 otherKey: This is a string argument
 
+
+#labels 10
+#asd
+#asdf
+#asd

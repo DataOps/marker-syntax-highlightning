@@ -1,0 +1,27 @@
+
+# Value
+1,2,3,4,5,6,7,8
+#barchart
+#labels
+
+# Key, Value
+Key-Value, otherKey-othervalue
+#relationchart
+#nolabels
+#321
+
+# Key, Key, Value
+John-David-18, Patrik-Oscar-19, Morhaf-Jimmy-12
+#relationvaluechart
+#labels
+#interactive
+#alphabetic
+
+# From file
+data.csv # data.json also supported
+#polarchart #labels #hashtags
+
+# sorting
+#value abc
+#key 123
+#key z321

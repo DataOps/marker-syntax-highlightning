@@ -6,17 +6,27 @@ fileTypes: [mr]
 uuid: b9dc6dbf-fab9-42ca-882f-6400acaa79cb
 
 patterns:
+- comment: key-value
+  name: string.unquoted.marker
+  match: ([A-Za-z0-9]+(\-[A-Za-z0-9]+)+)
+
 - comment: Tab stops like $1, $2...
   name: constant.numeric.marker
   match: \d+
 
-- comment: Visualization type keyword
-  name: keyword.other.marker
-  match: ^type[:]
+# - comment: Visualization type keyword
+#   name: keyword.other.marker
+  # match: ^type[:]
+
+# - comment: Value type keyword
+#   name: keyword.other.marker
+#   match: ^data[:](\s[\S]+\.(json|csv))
+#   captures:
+#     '1': {name: support.function.marker}
 
 - comment: Value type keyword
   name: keyword.other.marker
-  match: ^data[:](\s[\S]+\.(json|csv))
+  match: ([\S]+\.(json|csv))
   captures:
     '1': {name: support.function.marker}
 
@@ -26,9 +36,10 @@ patterns:
 
 - comment: Comments like # hello world
   name: comment.line.marker
-  match: \#.*
+  match: \#\s.*
 
-- comment: key: string value
+
+- comment: key string value
   name: entity.name.tag.marker
   match: \S+[:](\s[A-Za-z][\S\s]+)
   captures:
@@ -37,5 +48,14 @@ patterns:
 - comment: Keys
   name: entity.name.tag.marker
   match: ^[a-zA-Z]*[:] 
+
+- comment: Keys
+  name: entity.name.tag.marker
+  match: \#[^,;]*
+
+- comment: Keys
+  name: string.unquoted.marker
+  match: \@[^,;]*
+
 
 ...
